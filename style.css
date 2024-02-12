@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #151515;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 470px;
+    /* background-color: #3796e4; */
+    background-color: #000000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 34px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input[type=text],
+.search-btn {
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    border-radius: 35px;
+    padding: 1.2rem 1.5rem;
+    box-shadow: 0 6px 40px 1px #15151582;
+}
+
+
+.search input {
+    flex: 0.9;
+    background-color: #ffffffc8;
+    min-width: 20%;
+    /* flex-shrink: 100px; */
+}
+
+.search .search-btn {
+    background-color: #151515;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 100ms ease-in-out;
+}
+
+.search-btn:active {
+    transform: scale(0.92);
+    box-shadow: 0 6px 40px 5px #15151582;
+}
+
+.wheather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    display: none;
+}
+
+.wheather .wheather-icon {
+    width: 70%;
+    height: auto;
+    margin: 2rem auto;
+    filter: drop-shadow(0 0 40px #fff);
+}
+
+.temperature {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.city {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1.3rem;
+}
+
+.weather-data {
+    font-size: 2rem;
+    font-weight: 800;
+    /* margin-bottom: 1rem; */
+}
+
+.details {
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 2rem;
+}
+
+.details .col {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: start;
+}
+
+.details .col img{
+    /* margin: 20px; */
+    width: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        height: 93vh;
+    } 
+
+    .container {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .wheather .wheather-icon {
+        width: 80%;
+        /* margin: 5rem auto; */
+    }
+}
