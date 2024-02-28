@@ -24,6 +24,7 @@ body {
     border-radius: 20px;
     padding: 34px 35px;
     text-align: center;
+    /* max-height: 80%; */
 }
 
 .search {
@@ -73,9 +74,9 @@ body {
 }
 
 .wheather .wheather-icon {
-    width: 70%;
+    width: 60%;
     height: auto;
-    margin: 2rem auto;
+    margin: 1rem auto;
     filter: drop-shadow(0 0 40px #fff);
 }
 
