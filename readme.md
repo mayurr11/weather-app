@@ -41,6 +41,10 @@ This application is deployed on Vercel. [Click here to access it.](insert_vercel
 
 
 
+## Demo 🎥
+
+[Add a link to a live demo of the application if available.]
+
 ## Author ✍️
 
 Mayur Chauhan
