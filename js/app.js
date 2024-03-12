@@ -11,7 +11,7 @@ const container = document.querySelector(".container");
 
 const wheatherCheck = async () => {    
     const input = document.querySelector("input");
-    const searchCity = input.value;
+    const searchCity = input.value.toLowerCase();
     // console.log(searchCity);
     try {
         const res = await fetch(API_URL + searchCity + `&appid=${API_KEY}`);
