@@ -8,9 +8,10 @@ const wheatherIcon = document.querySelector(".wheather-icon");
 const searchBtn = document.querySelector(".search-btn");
 const wheatherdata = document.querySelector(".weather-data");
 const container = document.querySelector(".container");
+const input = document.querySelector("input");
+    
 
 const wheatherCheck = async () => {    
-    const input = document.querySelector("input");
     const searchCity = input.value.toLowerCase();
     // console.log(searchCity);
     try {
@@ -61,3 +62,11 @@ searchBtn.addEventListener('click', (evt) => {
 }
 );
 
+input.addEventListener('keypress', (evt) => { 
+    if(evt.key == 'Enter') {
+        evt.preventDefault();
+        wheatherCheck();
+        document.querySelector('.wheather').style.display = "flex";
+    }
+    }
+);
