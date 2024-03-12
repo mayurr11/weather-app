@@ -19,7 +19,7 @@ const wheatherCheck = async () => {
         const data = await res.json();
     
         // console.log(data);
-        
+
         city.innerText = data.name;
         temperature.innerText = Math.round(data.main.temp) + " °C";
         humidity.innerText = data.main.humidity + " %";
@@ -51,6 +51,15 @@ const wheatherCheck = async () => {
     } catch (e) {
         alert("Please Enter Correct city name or check your internet connection!");
         // console.log(e);
+
+        city.innerText = 'Not Found';
+        temperature.innerText =  "0 °C";
+        humidity.innerText = "- %";
+        wind.innerText = " - km/h";
+        wheatherdata.innerText = data.weather[0].main;
+
+        container.style.background = "#3796e4";
+        container.style.color = "#fff";
     }
     // if()
 };
