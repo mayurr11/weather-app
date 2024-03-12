@@ -12,7 +12,7 @@ const input = document.querySelector("input");
     
 
 const wheatherCheck = async () => {    
-    const searchCity = input.value.toLowerCase();
+    const searchCity = input.value.toLowerCase().trim();
     // console.log(searchCity);
     try {
         const res = await fetch(API_URL + searchCity + `&appid=${API_KEY}`);
